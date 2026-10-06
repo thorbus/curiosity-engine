@@ -16,24 +16,28 @@ Open http://127.0.0.1:8765/. A preview server is already running from the curren
 
 - An original pixel-art island with clickable destinations and a photo-based explorer avatar.
 - Newton's live orbit on the homepage, with an adjustable version inside the scientist atlas.
-- 24 scientist discoveries with animations, explanations, adjustable parameters, pause, and reset.
+- 40 thinker and scientist discoveries with animations, explanations, adjustable parameters, pause, and reset.
 - Four games: Newton's projectile landings, Faraday's induction challenge, Maxwell's wave matching, and Feynman's photon-pattern detective game.
 - A four-stamp discovery passport saved in localStorage in the visitor's browser. No server or account.
-- Scientist search, a free-form physics playground, notes, and a small command terminal.
+- Early ideas, classical and modern physics routes, seven overlapping branch filters including thermodynamics, scientist search, a free-form physics playground, notes, and a small command terminal.
+- A featured Newton tribute with his laws of motion, gravitation, optics, and calculus; “God of Science” is labeled as a personal tribute.
 - Draggable desktop windows with minimize, restore, maximize, close, and keyboard controls; responsive phone layouts.
 - Rtifact experience, two curated quant case studies, LinkedIn/GitHub contact links, and an about view with a generated pixel portrait.
 
 ## Scientists
 
-Newton, Galileo, Kepler, Hooke, Coulomb, Ampère, Faraday, Maxwell, Hertz, Huygens, Young, Doppler, Einstein, Planck, Bohr, Curie, Rutherford, Schrödinger, Feynman, Noether, Bose, Raman, Boltzmann, and Dirac.
+Aristotle, Archimedes, Ptolemy, Copernicus, Tycho Brahe, Galileo, Kepler, Newton, Hooke, Coulomb, Ampère, Faraday, Maxwell, Hertz, Huygens, Young, Doppler, Carnot, Joule, Clausius, Kelvin, Fourier, Gibbs, Boltzmann, Einstein, Planck, Bohr, Curie, Rutherford, de Broglie, Heisenberg, Schrödinger, Pauli, Fermi, Bose, Raman, Meitner, Dirac, Feynman, and Noether.
 
 These are educational visualizations with simplified scale, time, and colors. The site distinguishes qualitative illustrations, normalized models, and historical models from literal physical trajectories. The photon game samples an idealized far-field intensity distribution. It does not model an entire experimental apparatus.
+
+- Portfolio identity, experience/project links, and the user-provided email appear at the top. The @ contact entry opens a contact window with a mailto link.
+- Eight short science stories include links to NASA, Museo Galileo, the Royal Institution, the Science and Industry Museum, MIT, and Nobel lectures. Historical cosmologies are explicitly labeled.
 
 ## Content and artwork
 
 - Professional title, Rtifact start date (November 2025), responsibilities, current work, location, and education come from the user's supplied LinkedIn screenshots.
 - The Polymarket arbitrage and BTC market-research project details and technical skills come from the user's supplied resume screenshot.
-- The user confirmed 100 percentile in Physics in the March 2021 JEE Main attempt.
+- The JEE Main achievement is currently hidden in HTML comments at the owner’s request. Restore only when requested.
 - No job metrics, performance results, repository links for the quant projects, or live trading integrations were invented.
 - The old GitHub repository catalogue was removed at the user's request.
 - The homepage title and physics notes are original copy, not quotations attributed to scientists.
@@ -44,7 +48,9 @@ These are educational visualizations with simplified scale, time, and colors. Th
 - `dist/index.html`: world layout, hotspots, metadata, dock
 - `dist/style.css`: pixel theme, windows, responsive layouts
 - `dist/app.js`: base window manager, orbit, terminal, quant case studies, free lab
-- `dist/universe.js`: scientist atlas, 24 visualizations, four games, passport, experience, photo-based profile
+- `dist/universe.js`: categorized scientist atlas, original visualizations, four games, passport, experience, photo-based profile
+- `dist/discoveries.js`: 16 additional historical, thermal, and quantum visualizations
+- `dist/stories.js`: eight original short science stories with source links and related experiments
 - `dist/projects.js`: curated quant project data
 - `dist/assets/`: original generated artwork
 
@@ -61,7 +67,7 @@ A feature-detected WebMCP tool, `open_physics_discovery`, opens a scientist and 
 ## Validation
 
 - JavaScript syntax checks passed.
-- All 24 scientist views opened in the browser without console errors.
+- All original 24 scientist views opened in the browser without console errors.
 - Desktop and mobile layouts were visually inspected, with all local images loaded and no horizontal overflow in checked views.
 - Real browser checks covered a successful projectile landing, induction input, photon generation, calculator arithmetic, window controls, and terminal commands.
 - Isolated tests executing the actual game source passed all four complete win paths, wrong/premature answers, passport persistence, and pause behavior without changing the user's browser progress.
@@ -69,7 +75,7 @@ A feature-detected WebMCP tool, `open_physics_discovery`, opens a scientist and 
 
 ## Publishing
 
-Cloudflare Workers Static Assets is configured in `wrangler.jsonc`. No public deployment or hosted account has been created.
+Cloudflare Workers Static Assets is configured in `wrangler.jsonc` with Worker name `sb`. The GitHub repository is `thorbus/curiosity-engine`; its `main` branch is used for deployment.
 
 ### GitHub auto-deployment
 
@@ -90,3 +96,5 @@ npm run deploy
 The dry run validates deployment configuration without publishing. Login and deployment use your Cloudflare account. The site itself remains plain static files and needs no runtime secrets or backend.
 
 Deployment validation: Wrangler 4.147.0 completed `npm run check:deploy` successfully. npm audit reports a high-severity sharp/librsvg advisory inherited through the local Miniflare development tooling. Those packages are not shipped with the static site; do not use the local image-processing tooling on untrusted SVGs. The upstream advisory is https://github.com/advisories/GHSA-wq5f-xc86-pv6w.
+
+Local expansion validation: all 16 new discoveries opened with their parameter extremes in the browser; finite canvas arguments checked for all 40 entries at minimum/default/maximum values over five time samples; all eight story readers and source links checked; the email mailto link verified without sending a message.
