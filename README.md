@@ -14,7 +14,7 @@ Open http://127.0.0.1:8765/. A preview server is already running from the curren
 
 ## Explore
 
-- An original pixel-art island with clickable destinations and a photo-based explorer avatar.
+- An original pixel-art island with clickable destinations. The flexing explorer character has been removed from the page.
 - Newton's live orbit on the homepage, with an adjustable version inside the scientist atlas.
 - 40 thinker and scientist discoveries with animations, explanations, adjustable parameters, pause, and reset.
 - Four games: Newton's projectile landings, Faraday's induction challenge, Maxwell's wave matching, and Feynman's photon-pattern detective game.
@@ -22,7 +22,7 @@ Open http://127.0.0.1:8765/. A preview server is already running from the curren
 - Early ideas, classical and modern physics routes, seven overlapping branch filters including thermodynamics, scientist search, a free-form physics playground, notes, and a small command terminal.
 - A featured Newton tribute with his laws of motion, gravitation, optics, and calculus; “God of Science” is labeled as a personal tribute.
 - Draggable desktop windows with minimize, restore, maximize, close, and keyboard controls; responsive phone layouts.
-- Rtifact experience, two curated quant case studies, LinkedIn/GitHub contact links, and an about view with a generated pixel portrait.
+- Rtifact experience, two curated quant case studies, LinkedIn/GitHub contact links, and a generated pixel portrait in the portfolio header.
 
 ## Scientists
 
@@ -48,7 +48,7 @@ These are educational visualizations with simplified scale, time, and colors. Th
 - `dist/index.html`: world layout, hotspots, metadata, dock
 - `dist/style.css`: pixel theme, windows, responsive layouts
 - `dist/app.js`: base window manager, orbit, terminal, quant case studies, free lab
-- `dist/universe.js`: categorized scientist atlas, original visualizations, four games, passport, experience, photo-based profile
+- `dist/universe.js`: categorized scientist atlas, original visualizations, four games, passport and experience
 - `dist/discoveries.js`: 16 additional historical, thermal, and quantum visualizations
 - `dist/stories.js`: eight original short science stories with source links and related experiments
 - `dist/projects.js`: curated quant project data
@@ -60,7 +60,7 @@ Google Fonts supplies DM Sans, IBM Plex Mono, and Silkscreen, with system fallba
 
 Click a map destination or dock icon. Range controls support keyboard arrows. Escape closes the foremost window. Alt+1 opens selected work, Alt+2 the free lab, and Alt+3 the terminal.
 
-Terminal commands: `help`, `whoami`, `ls`, `open <app>`, `physics`, `github`, and `clear`. Apps include `games`, `atlas`, `projects`, `experience`, `lab`, `notes`, `about`, and `contact`.
+Terminal commands: `help`, `whoami`, `ls`, `open <app>`, `physics`, `github`, and `clear`. Apps include `games`, `atlas`, `projects`, `experience`, `lab`, `notes`, and `contact`.
 
 A feature-detected WebMCP tool, `open_physics_discovery`, opens a scientist and optionally configures a validated parameter; it cannot award stamps. The website works in browsers without WebMCP.
 
@@ -98,3 +98,5 @@ The dry run validates deployment configuration without publishing. Login and dep
 Deployment validation: Wrangler 4.147.0 completed `npm run check:deploy` successfully. npm audit reports a high-severity sharp/librsvg advisory inherited through the local Miniflare development tooling. Those packages are not shipped with the static site; do not use the local image-processing tooling on untrusted SVGs. The upstream advisory is https://github.com/advisories/GHSA-wq5f-xc86-pv6w.
 
 Local expansion validation: all 16 new discoveries opened with their parameter extremes in the browser; finite canvas arguments checked for all 40 entries at minimum/default/maximum values over five time samples; all eight story readers and source links checked; the email mailto link verified without sending a message.
+
+The standalone About Me window and all its entry points have been removed. The portfolio header and professional experience remain. The original explorer asset is retained as an unused source asset.
