@@ -75,7 +75,7 @@ Cloudflare Workers Static Assets is configured in `wrangler.jsonc`. No public de
 
 1. Put the contents of this directory in a GitHub repository (with `package.json`, `wrangler.jsonc`, and `dist/` at the repository root). Do not upload `node_modules/`.
 2. In Cloudflare, open Workers & Pages, create an application, and import the GitHub repository.
-3. Use Worker name `curiosity-engine`, production branch `main`, repository root directory, no build command, and deploy command `npm run deploy`.
+3. Use Worker name `sudhanshu-bhale`, production branch `main`, repository root directory, no build command, and deploy command `npm run deploy`.
 4. Deploy. Cloudflare supplies the public workers.dev address. Subsequent pushes to the connected production branch deploy updates automatically.
 
 ### Local deployment commands
