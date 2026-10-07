@@ -20,3 +20,45 @@
 @media(max-width:360px){.hero-profile{flex-wrap:wrap}.portfolio-hero h1{font-size:35px}.dock>button{width:31px}.menubar nav button{font-size:11px}}
 @media(max-width:620px){.menubar nav{gap:4px}.menubar nav button{font:9px/1.6 var(--pixel);letter-spacing:0;min-width:0}.menubar{padding-left:16px;padding-right:16px}}
 @media(max-width:360px){.menubar nav button{font-size:8px}}
+/* AI side: day job, journey, physics bridge, math notebook */
+.ai-work{margin-top:34px}.ai-bridge{margin-top:38px;margin-bottom:12px}.ai-work .section-heading h2 em{font-style:normal;color:#c5a9e6}
+.ai-work-grid{display:grid;grid-template-columns:1.9fr 1fr;gap:18px}
+.ai-capabilities{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ai-capabilities article{padding:21px;border:2px solid #4d435e;background:#211e30;box-shadow:4px 4px 0 #0c0b17}
+.ai-capabilities h3{font-size:19px;font-weight:500;letter-spacing:-.3px;margin:10px 0 8px}
+.ai-capabilities p{font-size:14px;color:var(--muted);margin:0}
+.ai-journey{padding:21px 22px;border:1px solid #947957;background:#2b2530;box-shadow:4px 4px 0 #100d1b}
+.ai-timeline{list-style:none;margin:16px 0 0;padding:0}
+.ai-timeline li{position:relative;padding:0 0 16px 20px;border-left:1px solid #5b486c;margin-left:4px}
+.ai-timeline li:last-child{padding-bottom:0;border-left-color:transparent}
+.ai-timeline li::before{content:'';position:absolute;left:-5px;top:5px;width:9px;height:9px;background:#5b486c}
+.ai-timeline li.current::before{background:var(--green);box-shadow:0 0 0 3px #dfd89333}
+.ai-timeline .meta{display:block;margin:0}
+.ai-timeline strong{display:block;font-weight:500;font-size:16px;line-height:1.4}
+.ai-timeline strong span{color:var(--muted);font-weight:400}
+.ai-timeline p{font-size:14px;color:var(--muted);margin:3px 0 0}
+.ai-bridge .science-glyph{font-size:34px;letter-spacing:1px;white-space:nowrap}
+.ai-bridge .science-glyph sup{font-size:.55em}
+.ai-journey-window{margin:34px 0 0}.ai-journey-window>h3{font-size:22px;font-weight:500;margin:0 0 6px}
+.experience-education{margin:22px 0 0;font-size:15px}.experience-education .meta{display:inline;margin-right:10px}
+.softmax-row{display:grid;grid-template-columns:130px 1fr 58px;align-items:center;gap:12px;font:13px var(--mono);margin:7px 0}
+.softmax-row i{display:block;height:14px;background:linear-gradient(90deg,#cfb3ec var(--p),#2c2540 var(--p));border:1px solid #45405e;transition:background .15s}
+.softmax-row b{font-weight:500;text-align:right;color:var(--green)}
+.ai-concepts{display:grid;gap:16px}
+.ai-concept h3{font-size:21px;font-weight:500;margin:10px 0 0}.ai-concept p{margin:0;color:#d8cfe3}
+.ai-concept .formula{font-size:22px}.ai-concept.focused{border-color:#f1daff;border-top-color:var(--green)}
+@media(max-width:1100px){.ai-work-grid{grid-template-columns:1fr}}
+@media(max-width:800px){.ai-capabilities{grid-template-columns:1fr}.ai-bridge .science-glyph{font-size:28px}}
+@media(max-width:620px){.ai-work .section-heading h2,.ai-bridge .section-heading h2{max-width:none}.softmax-row{grid-template-columns:96px 1fr 50px;font-size:11px;gap:8px}.ai-bridge .science-glyph{font-size:22px}}
+.ai-bridge .section-heading h2 em{font-style:normal;color:#c5a9e6}
+.ai-exp-picker{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 16px}
+.ai-exp-picker button{padding:10px 8px;border:1px solid #4d435e;background:#211e30;font:10px/1.5 var(--pixel);color:#cfc3dd;text-align:center}
+.ai-exp-picker button.active{border-color:#f1daff;background:#3a2f50;color:var(--text);box-shadow:3px 3px 0 #0c0b17}
+.ai-exp{background:#1b1728;border:1px solid var(--line);padding:22px;margin-bottom:8px}
+.ai-exp>h3{font:italic 22px Georgia;margin:10px 0 16px;color:#f3e7d4}
+.ai-canvas{background:#141120;border-color:#45405e;height:300px}.ai-canvas.clickable{cursor:crosshair}
+.ai-exp .lab-controls{margin:16px 0 4px}.ai-exp .lab-controls label{font:12px var(--mono);color:var(--muted)}.ai-exp .lab-controls input{accent-color:#cfb3ec}.ai-exp .lab-controls output{color:var(--text);min-width:52px}
+.ai-exp .demo-note{min-height:20px;color:#dfd893;font-family:var(--mono)}
+.ai-exp-text{font-size:15px;color:#d8cfe3;margin:0}
+.ai-exp .softmax-bars{margin-top:4px}
+@media(max-width:620px){.ai-exp-picker{grid-template-columns:1fr 1fr}.ai-exp{padding:15px}.ai-canvas{height:230px}}
