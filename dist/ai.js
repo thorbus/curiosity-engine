@@ -1,6 +1,7 @@
 // The AI side of the portfolio: career journey, AI experiments, and the math & physics behind modern AI.
 const aiJourney=[
-{when:'NOV 2025 — NOW',role:'Associate ML Engineer',org:'Rtifact',text:'AI agents, LLM applications, and AIOps for production incidents.',current:true},
+{when:'OCT 2026 — NOW',role:'Senior Associate AI Engineer',org:'Rtifact',text:'AI agents, LLM applications, and AIOps for production incidents.',current:true},
+{when:'NOV 2025 — SEP 2026',role:'Associate ML Engineer',org:'Rtifact',text:'AI agents, LLM applications, and AIOps for production incidents.'},
 {when:'FEB — JUL 2025',role:'AI Intern',org:'DharmikVibes',text:'Generative AI and applied AI.'},
 {when:'MAY — JUL 2024',role:'Backend Intern',org:'LivAgain',text:'Backend engineering foundations.'}];
 
